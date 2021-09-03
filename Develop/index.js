@@ -4,52 +4,52 @@ const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 const questions = [
-    // {
-    //     type: "input",
-    //     message: "Title?",
-    //     name: "Title",
-    // },
-    // {
-    //     type: "input",
-    //     message: "Description?",
-    //     name: "Description",
-    // },
-    // {
-    //     type: "input",
-    //     message: "table of contents",
-    //     name:"table of contents"
-    // },
-    // {
-    //     type: "input",
-    //     message: "Installation?",
-    //     name:"installation"
-    // },
-    // {
-    //     type: "input",
-    //     message: "Usage?",
-    //     name:"usage"
-    // },
     {
-        type: "list",
-        message: "License?",
-        choices: ("yes", "no"),
-        name:"license"
+        type: "input",
+        message: "Title?",
+        name: "Title",
+    },
+    {
+        type: "input",
+        message: "Description?",
+        name: "Description",
+    },
+    {
+        type: "input",
+        message: "table of contents",
+        name:"table of contents"
+    },
+    {
+        type: "input",
+        message: "Installation?",
+        name:"installation"
+    },
+    {
+        type: "input",
+        message: "Usage?",
+        name:"usage"
     },
     // {
-    //     type: "input",
-    //     message: "Contributing?",
-    //     name:"contributing"
+    //     type: "list",
+    //     message: "License?",
+    //     choices: ("yes", "no"),
+    //     name:"license"
     // },
-    // {
-    //     type: "input",
-    //     message: "tests?",
-    //     name:"tests"
-    // },
-    // {
-    //     type: "input",
-    //     message: "questions?",
-    //     name:"Questions"
-    // }
+    {
+        type: "input",
+        message: "Contributing?",
+        name:"contributing"
+    },
+    {
+        type: "input",
+        message: "tests?",
+        name:"tests"
+    },
+    {
+        type: "input",
+        message: "questions?",
+        name:"Questions"
+    }
 ];
 
 inquirer.prompt(questions)
@@ -62,14 +62,13 @@ inquirer.prompt(questions)
 
 
 // TODO: Create a function to write README file
-// const generateMarkdown = (response) => {
-//     console.log(response)
+const generateMarkdown = (response) => {
+    console.log(response)
 
-//     fs.writeFile("README.md", generateMarkdown (response), (err) =>
-//     err ? console.log
+    fs.writeFile("README.md", generateMarkdown (response), (err) =>
+    err ? console.log()
     
-// }
-
+}
 
 
 // TODO: Create a function to initialize app

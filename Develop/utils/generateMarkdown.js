@@ -1,7 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-
+  // return `# ${response.title}
+  // ${renderLicenseBadge(response.license)}
+  
 
 
 }
@@ -21,14 +23,14 @@ function renderLicenseLink(license) {}
 
 // TODO: Create a function to generate markdown for README
 
-  function generateMarkdown(response) 
-  return `# ${response.title}
+  function generateMarkdown(response) {
+  return `# ${response.title}'
   ${renderLicenseBadge(response.license)};
   
   # Contributors
   ${response.contributors};
   ${renderLicenseBadge(response.license)};
-  `;
+  `};
 
   
 
