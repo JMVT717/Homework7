@@ -66,9 +66,8 @@ const generateMarkdown = (response) => {
     console.log(response)
 
     fs.writeFile("README.md", generateMarkdown (response), (err) =>
-    err ? console.log()
-    
-}
+    err ? console.log(err) : console.log("README.md successfully created"))
+};
 
 
 // TODO: Create a function to initialize app
